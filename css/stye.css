@@ -26,6 +26,9 @@ a {
   overflow-y: scroll;
   max-height: 80vh;
 }
+ul#pizzas{
+  padding-left:0;
+}
 #pizzas .card img {
   transition: 0.5s;
 }
@@ -221,5 +224,9 @@ i {
   }
   .catageroies {
     justify-content: center;
-  }
+  }.banner {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+}
 }
