@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+  color: inherit;
+}
+.card {
+  position: relative;
+  transition: 0.5s;
+  width: 18rem;
+  padding: 0.5rem;
+}
+.banner {
+  color: white;
+  text-align: right;
+  width: 50%;
+  padding-right: 2rem;
+}
+.banner h1 {
+  font-size: 5rem !important;
+}
+#popupBasket .card {
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+#pizzas .card img {
+  transition: 0.5s;
+}
+#pizzas .card img:hover {
+  transform: scale(1.05);
+}
+#pizzas .card-text {
+  font-size: 0.9rem !important;
+  margin-bottom: 0.5rem;
+}
+#pizzas {
+  justify-content: center !important;
+}
+#pizzas .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popupPizza .card-img-top {
+  width: 100%;
+  background-color: white;
+  height: 15rem;
+  object-fit: contain;
+}
+.card-popup {
+  background-color: rgb(0, 102, 133);
+}
+.likeBtn {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 40;
+  top: 0.2rem;
+}
+
+.likeBtn i {
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+.basketIcon {
+  color: black;
+  position: relative;
+  font-size: 1.5rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.bg {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: end;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../images/bg.jpg");
+}
+.countPizza {
+  position: absolute;
+  top: -3px;
+  color: white;
+  background-color: red;
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+  right: -1px;
+}
+.active {
+  color: rgb(9, 50, 255);
+}
+.row {
+  margin: 0;
+}
+.container {
+  max-width: 96% !important;
+  margin: 0 auto;
+}
+.catageroies {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.red {
+  color: red !important;
+}
+.popupPizza {
+  position: fixed;
+  top: 50%;
+  z-index: 5000;
+  display: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.qty .count {
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 0 2px;
+  min-width: 50px;
+  text-align: center;
+}
+.qty .plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial, sans-serif;
+  text-align: center;
+  border-radius: 50%;
+}
+.qty .minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial, sans-serif;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+div {
+  text-align: center;
+}
+.minus:hover {
+  background-color: #717fe0 !important;
+}
+.plus:hover {
+  background-color: #717fe0 !important;
+}
+/*Prevent text selection*/
+span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+input {
+  border: 0;
+  width: 2%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:disabled {
+  background-color: white;
+}
+i {
+  transition: 0.6s;
+}
+.removeItem:hover i {
+  transform: scale(1.29);
+  color: black !important;
+}
+.operations {
+  display: none !important;
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .popupPizza .card {
+    width: 21rem !important;
+  }
+
+  .qty span {
+    font-size: 1.5rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  .catageroies {
+    justify-content: center;
+  }
+}
