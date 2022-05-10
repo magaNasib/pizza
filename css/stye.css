@@ -204,10 +204,14 @@ i {
 }
 .operations {
   display: none !important;
+}@media screen and (max-width: 768px) {
+  .banner {
+    width: 100%;
+}
 }
 @media screen and (max-width: 576px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
   .card {
     width: 90%;
